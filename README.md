@@ -1,4 +1,4 @@
-ASSIGNEMTN 1
+ASSIGNMENT 1
 =============================
 
 Simple Task Management System
@@ -37,8 +37,6 @@ Simple Task Management System
   mybatis.type-aliases-package=com.example.demo.model
   
   server.port=8080
-  
-  # Enable SQL logging for debugging (optional)
   logging.level.org.mybatis=DEBUG
   logging.level.java.sql=DEBUG
 
