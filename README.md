@@ -37,7 +37,9 @@ Simple Task Management System
   mybatis.type-aliases-package=com.example.demo.model
   
   server.port=8080
+  
   logging.level.org.mybatis=DEBUG
+  
   logging.level.java.sql=DEBUG
 
 
