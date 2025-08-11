@@ -17,31 +17,14 @@
 
 4. **How does Spring Boot handle dependency injection?**
 
-- Uses Inversion of Control (IoC) via the Spring container.
-- Beans are injected using `@Autowired`, constructor injection, or setter injection.
+   Spring Boot uses the Spring IoC container to automatically create and inject beans marked with annotations like @Component or @Service. It wires dependencies mainly via constructor injection, simplifying setup through auto-configuration and component scanning.
 
 5. **What is CORS and how do you enable it in Spring Boot?**
 
    CORS (Cross-Origin Resource Sharing) is a mechanism that allows web browsers to make requests to a different domain than the one serving the web page. Without CORS, browsers block such requests for security reasons.
 
    -To Enable `@CrossOrigin`
-
-   Method 1 - Global Configuration:
-
-   @Configuration
-   public class WebConfig implements WebMvcConfigurer {
-   @Override
-   public void addCorsMappings(CorsRegistry registry) {
-   registry.addMapping('/\*_')
-   .allowedOrigins('_')
-   .allowedMethods("GET", "POST", "PUT", "DELETE");
-   }
-   }
-
-   Method 2 - Per Controller
-   @CrossOrigin(origins = "\*")
-   @RestController
-   public class MyController { }
+   Enable via @CrossOrigin annotation or WebMvcConfigurer bean.
 
 6. **How would you secure a REST API?**
 
