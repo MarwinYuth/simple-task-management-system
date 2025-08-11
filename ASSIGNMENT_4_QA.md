@@ -17,7 +17,7 @@
 
 4. **How does Spring Boot handle dependency injection?**
 
-Spring Boot uses the Spring IoC container to automatically create and inject beans marked with annotations like @Component or @Service. It wires dependencies mainly via constructor injection, simplifying setup through auto-configuration and component scanning.
+   Spring Boot uses the Spring IoC container to automatically create and inject beans marked with annotations like @Component or @Service. It wires dependencies mainly via constructor injection,      simplifying setup through auto-configuration and component scanning.
 
 5. **What is CORS and how do you enable it in Spring Boot?**
 
