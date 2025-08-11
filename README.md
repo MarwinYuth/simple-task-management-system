@@ -12,7 +12,7 @@
 
   CREATE DATABASE tasks_db;
 
-  \c taskdb
+  \c tasks_db
 
   CREATE TABLE tasks (
   id SERIAL PRIMARY KEY,
