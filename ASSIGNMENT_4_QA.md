@@ -2,9 +2,9 @@
 
 1. **Difference between @Component, @Service, @Repository**
 
-   @Component: Generic Spring annotation for any bean. Marks a class as a Spring-managed component, used for utility or miscellaneous classes, with no specific layer or extra behavior.
-   @Service: Specialized @Component for the service layer. Indicates a class handles business logic, providing semantic clarity and potentially supporting transaction management.
-   @Repository: Specialized @Component for the data access layer. Marks a class for database operations, with added behavior like automatic exception translation for persistence-related errors.
+   - @Component: Generic Spring annotation for any bean. Marks a class as a Spring-managed component, used for utility or miscellaneous classes, with no specific layer or extra behavior.
+   - @Service: Specialized @Component for the service layer. Indicates a class handles business logic, providing semantic clarity and potentially supporting transaction management.
+   - @Repository: Specialized @Component for the data access layer. Marks a class for database operations, with added behavior like automatic exception translation for persistence-related errors.
 
 2. **Explain Spring Boot auto-configuration**
 
@@ -24,6 +24,7 @@
    CORS (Cross-Origin Resource Sharing) is a mechanism that allows web browsers to make requests to a different domain than the one serving the web page. Without CORS, browsers block such requests for security reasons.
 
    -To Enable `@CrossOrigin`
+
    Enable via @CrossOrigin annotation or WebMvcConfigurer bean.
 
 6. **How would you secure a REST API?**
