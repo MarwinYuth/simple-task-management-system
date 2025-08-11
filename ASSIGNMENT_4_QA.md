@@ -2,9 +2,9 @@
 
 1. **Difference between @Component, @Service, @Repository**
 
-   - `@Component` – Generic Spring-managed bean.
-   - `@Service` – Specialization of `@Component` for business logic layer.
-   - `@Repository` – Specialization of `@Component` for data access layer; adds exception translation.
+   @Component: Generic Spring annotation for any bean. Marks a class as a Spring-managed component, used for utility or miscellaneous classes, with no specific layer or extra behavior.
+   @Service: Specialized @Component for the service layer. Indicates a class handles business logic, providing semantic clarity and potentially supporting transaction management.
+   @Repository: Specialized @Component for the data access layer. Marks a class for database operations, with added behavior like automatic exception translation for persistence-related errors.
 
 2. **Explain Spring Boot auto-configuration**
 
