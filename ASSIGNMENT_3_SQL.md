@@ -1,23 +1,27 @@
 # ASSIGNEMTN 3
 
--- 1. Count tasks by status (completed, pending, etc)
-SELECT status, COUNT(*) AS total
-FROM tasks
-GROUP BY status;
+1.Count tasks by status (completed, pending, etc.)
 
--- 2. List users with no assigned tasks
-SELECT u.id, u.name
-FROM users u
-LEFT JOIN tasks t ON u.id = t.user_id
-WHERE t.id IS NULL;
+    SELECT status, COUNT(*) AS total
+    FROM tasks
+    GROUP BY status;
 
--- 3. Find the most recently updated task
-SELECT *
-FROM tasks
-ORDER BY updated_at DESC
-LIMIT 1;
+2. List users with no assigned tasks
 
--- 4. Join two tables (e.g., Task and User) to show assignments
-SELECT t.id, t.title, u.name AS name
-FROM tasks t
-INNER JOIN users u ON t.user_id = u.id;
+   SELECT u.id, u.name
+   FROM users u
+   LEFT JOIN tasks t ON u.id = t.user_id
+   WHERE t.id IS NULL;
+
+3. Find the most recently updated task
+
+   SELECT
+   FROM tasks
+   ORDER BY updated_at DESC
+   LIMIT 1;
+
+4. Join two tables (e.g., Task and User) to show assignments
+
+   SELECT t.id, t.title, u.name AS name
+   FROM tasks t
+   INNER JOIN users u ON t.user_id = u.id;
