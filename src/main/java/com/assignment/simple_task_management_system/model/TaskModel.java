@@ -87,11 +87,11 @@ public class TaskModel {
         return updated_at;
     }
 
-    public void onCreate() {
+    public void onCreatedAt() {
         this.created_at = LocalDateTime.now();
     }
 
-    public void onUpdate() {
+    public void onUpdateAt() {
         this.updated_at = LocalDateTime.now();
     }
 }

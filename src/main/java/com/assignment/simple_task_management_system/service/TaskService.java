@@ -31,6 +31,10 @@ public class TaskService {
     }
 
     public TaskModel createTask(TaskModel taskModel){
+        if(taskMapper.findExistTaskTitle(taskModel.getTitle()) > 0){
+            throw new DuplicateTitleException("Task title already exist");
+        }
+        taskModel.onCreatedAt();
         taskMapper.insert(taskModel);
         return taskModel;
     }
@@ -43,6 +47,7 @@ public class TaskService {
         existing.setTitle(taskModel.getTitle());
         existing.setDescription(taskModel.getDescription());
         existing.setStatus(taskModel.getStatus());
+        existing.onUpdateAt();
         taskMapper.update(existing);
         return existing;
     }

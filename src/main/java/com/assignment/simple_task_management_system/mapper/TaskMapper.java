@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -21,6 +22,7 @@ public interface TaskMapper {
     TaskModel findById(Long id);
 
     @Insert("INSERT INTO tasks(title, description, status) VALUES(#{title}, #{description}, #{status})")
+    @Options(useGeneratedKeys = true,keyProperty = "id")
     int insert(TaskModel taskModel);
 
     @Update("UPDATE tasks SET title=#{title}, description=#{description}, status=#{status} WHERE id=#{id}")
