@@ -2,9 +2,9 @@
 
 1. **Difference between @Component, @Service, @Repository**
 
-   - @Component: Generic Spring annotation for any bean. Marks a class as a Spring-managed component, used for utility or miscellaneous classes, with no specific layer or extra behavior.
-   - @Service: Specialized @Component for the service layer. Indicates a class handles business logic, providing semantic clarity and potentially supporting transaction management.
-   - @Repository: Specialized @Component for the data access layer. Marks a class for database operations, with added behavior like automatic exception translation for persistence-related errors.
+- @Component: Generic Spring annotation for any bean. Marks a class as a Spring-managed component, used for utility or miscellaneous classes, with no specific layer or extra behavior.
+- @Service: Specialized @Component for the service layer. Indicates a class handles business logic, providing semantic clarity and potentially supporting transaction management.
+- @Repository: Specialized @Component for the data access layer. Marks a class for database operations, with added behavior like automatic exception translation for persistence-related errors.
 
 2. **Explain Spring Boot auto-configuration**
 
@@ -17,7 +17,7 @@
 
 4. **How does Spring Boot handle dependency injection?**
 
-   Spring Boot uses the Spring IoC container to automatically create and inject beans marked with annotations like @Component or @Service. It wires dependencies mainly via constructor injection, simplifying setup through auto-configuration and component scanning.
+Spring Boot uses the Spring IoC container to automatically create and inject beans marked with annotations like @Component or @Service. It wires dependencies mainly via constructor injection, simplifying setup through auto-configuration and component scanning.
 
 5. **What is CORS and how do you enable it in Spring Boot?**
 
