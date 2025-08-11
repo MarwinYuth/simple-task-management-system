@@ -1,6 +1,6 @@
 # ASSIGNEMTN 3
 
-1.Count tasks by status (completed, pending, etc.)
+1.Count tasks by status (completed, pending, etc)
 
     SELECT status, COUNT(*) AS total
     FROM tasks

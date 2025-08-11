@@ -41,7 +41,7 @@
    Method 2 - Per Controller
    @CrossOrigin(origins = "\*")
    @RestController
-   public class MyController { ... }
+   public class MyController { }
 
 6. **How would you secure a REST API?**
 

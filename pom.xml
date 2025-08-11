@@ -12,7 +12,7 @@
 	<artifactId>simple-task-management-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>simple-task-management-system</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Simple Task Management System</description>
 	<url/>
 	<licenses>
 		<license/>
